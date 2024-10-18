@@ -2,7 +2,7 @@
 //////////////////////////////FILÉ COM HORARIOS AJUSTADOS E INDISPONIBILIDADE DA HORA USADA//////////////////
 
 // Definir uma única URL pública para o backend
-const API_URL = 'https://seu-backend-publico.com/api'; // Substitua pela URL pública do backend
+const API_URL = 'http://138.204.148.189/api'; // Substitua pela URL pública do backend
 
 // Função para verificar a URL atual
 function isDashboardPage() {
