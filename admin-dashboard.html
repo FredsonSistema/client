@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle Administrador</title>
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+    <script src="//code.jivosite.com/widget/s0HXJbR4OT" async></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-14d191f0-eeaa-407e-a8e4-4706ff02afb9" data-elfsight-app-lazy></div> 
+        
+   </head>
+
+<header>
+    <section>
+        <button onclick="logout()">Sair</button>
+    </section>
+</header>
+<body>
+
+    <h1>Painel do Administrador</h1>
+    <div id="analytics"></div>
+    <button onclick="exportAppointments()">Exportar Agendamentos</button>
+
+    <h1>Painel de Controle Administrador</h1>
+
+    <section id="search-appointment-section">
+        <h2>Buscar Agendamento por Usuário</h2>
+        <label for="searchUsername">Nome do Usuário:</label>
+        <input type="text" id="searchUsername" placeholder="Digite o nome do usuário">
+        <button onclick="searchAppointmentByUsername()">Buscar</button>
+    </section>
+    
+
+    <section id="admin-controls">
+        <h2>Todos os Agendamentos</h2>
+        <div id="appointments"></div>
+    </section>
+
+    <section id="crud-controls">
+        <h2>Gerenciamento de Serviços</h2>
+        <label for="serviceType">Tipo de Serviço:</label>
+    <input type="text" id="serviceType" placeholder="Digite o tipo de serviço">
+    
+    <label for="appointmentDate">Data:</label>
+    <input type="date" id="appointmentDate">
+    
+    <label for="appointmentTime">Hora:</label>
+    <input type="time" id="appointmentTime">
+    
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" placeholder="Digite o nome do usuário">
+    
+    <button onclick="createAppointment()">Criar Agendamento</button>
+    </section>
+
+
+    <script src="js/admin-app.js"></script>
+    <script src="script/admin-dashboard.js"></script>
+</body>
+</html>

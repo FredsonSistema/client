@@ -1,0 +1,23 @@
+// Function to fetch appointments by username
+async function fetchAppointmentsByUser(username) {
+    try {
+        const response = await fetch(`/api/appointments?username=${username}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch appointments');
+        }
+
+        const appointments = await response.json();
+        // Display appointments in the UI
+        displayAppointments(appointments);
+    } catch (error) {
+        console.error(error);
+        alert('Error fetching appointments');
+    }
+}

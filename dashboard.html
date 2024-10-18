@@ -1,0 +1,60 @@
+<!-- FILÉ TUDO BEM FEITO ATÉ O MOMENTO, SEGUNDA GRAVAÇÃO -->
+ <!-- ********PERFEITO******** MAIS UM SALVE**** FALTA ESTILIZAR E DEIXA-LO MAIS HUMANO -->
+  <!-- ********PERFEITO******** MAIS UM SALVE**** HISTORICO DELETADO -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="//code.jivosite.com/widget/s0HXJbR4OT" async></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-14d191f0-eeaa-407e-a8e4-4706ff02afb9" data-elfsight-app-lazy></div> 
+    <title>Painel de Controle</title>
+</head>
+
+<header>
+
+    
+    <nav>
+        <button><a href="./index.html">Pagina Inicial</a></button>
+        <button><a href="#" id="logoutButton">Sair</a></button>
+        
+    </nav>
+    
+</header>
+    
+
+<body>
+    <h1>Seu Painel de Controle</h1>
+
+    <h2>Marque Seu Horário AQUI!</h2>
+    <form id="appointmentForm">
+        <label for="serviceType">Qual Serviço Vai Fazer?:</label>
+        <select id="serviceType">
+            <option value="Corte de Cabelo">Corte de Cabelo</option>
+            <option value="Barba">Barba</option>
+            <option value="Corte + Barba">Corte + Barba</option>
+        </select>
+
+        <label for="date">Escolha um Dia:</label>
+        <input type="date" id="date" required>
+
+        <label for="timeSlot">Escolha um horário:</label>
+        <select id="timeSlot" required></select>
+        <button type="submit">CLIQUE AQUI!</button>
+    </form>
+
+    <h2>Seus Agendamentos</h2>
+    <div id="appointments">
+        <!-- A lista de agendamentos será inserida aqui via JavaScript -->
+    </div>
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="script/dashboard.js"></script>
+</body>
+</html>
